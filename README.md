@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather Forecast built with ReactJS
 
-## Getting Started
+Code Challege building a Web Application using ReactJS, User Authentication, and 3rd-party API.
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Weather Forecast built with ReactJS](#weather-forecast-built-with-reactjs)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The Challenge](#the-challenge)
+    - [Links](#links)
+    - [Screenshot](#screenshot)
+  - [My process](#my-process)
+    - [Built with](#built-with)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### The Challenge
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- A simple web application with ReactJS to demonstrate a single page application with Server-Side rendering.
+- Illustrate the flexibility of the web application that is compatible with mobile and desktop use.
+- Showcasing the current ReactJS ecosystem.
+- Implementing user authentication useing Auth-0 framework and 3rd-party API.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Links
 
-## Learn More
+- Live Site URL:
 
-To learn more about Next.js, take a look at the following resources:
+### Screenshot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## My process
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Built with
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Open Weather Map API](https://openweathermap.org/) - 3rd-party API service
+- [Auth0](https://next-auth.js.org/) - For authentication
+- [Tailwindcss](https://tailwindcss.com/) - For styles
+- Mobile-first workflow.
