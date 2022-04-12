@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { useUser } from '@auth0/nextjs-auth0';
 import { TiWeatherPartlySunny } from 'react-icons/ti';
 import { IoMdExit } from 'react-icons/io';
@@ -12,13 +13,17 @@ const Header = () => {
       return (
         <>
           <div className="flex md:hidden py-2 px-4">
-            <a href="/api/auth/logout" className="cursor-pointer">
-              <IoMdExit size={30} />
-            </a>
+            <Link href="/api/auth/logout">
+              <a className="cursor-pointer">
+                <IoMdExit size={30} />
+              </a>
+            </Link>
           </div>
-          <a href="/api/auth/logout" className="hidden md:flex">
-            <Button>Log Out</Button>
-          </a>
+          <Link href="/api/auth/logout">
+            <a className="hidden md:flex">
+              <Button>Log Out</Button>
+            </a>
+          </Link>
         </>
       );
     } else {
