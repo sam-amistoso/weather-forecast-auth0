@@ -4,12 +4,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Weather Forecast V2</title>
+        <title>Weather Forecast</title>
         <meta name="description" content="Show current weather by City" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col max-w-md md:max-w-xl lg:max-w-3xl w-full h-full bg-white mx-auto items-center justify-center p-6">
+      <main className="flex flex-col max-w-md md:max-w-xl lg:max-w-4xl w-full h-full bg-white mx-auto items-center justify-center p-6">
         {children}
       </main>
     </>

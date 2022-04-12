@@ -3,12 +3,37 @@ import Image from 'next/image';
 import Button from '../components/Button';
 import { IoIosSearch } from 'react-icons/io';
 import { useUser } from '@auth0/nextjs-auth0';
+import { useRouter } from 'next/router';
 
 const HomeScreen = () => {
   const { user, error, isLoading } = useUser();
   const [cityName, setCityName] = useState('');
+  const router = useRouter();
 
   if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>{error.message}</div>;
+
+  const HandleDisplayWeatherBtn = async () => {
+    if (cityName === '' && cityName.length === 0) return null;
+
+    try {
+      const apiKey = process.env.WEATHER_API;
+      let url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apiKey}`;
+      await fetch(url)
+        .then((res) => res.json())
+        .then((info) => {
+          const latitude = info[0].lat;
+          const longitude = info[0].lon;
+          router.push(`/weather?lon=${longitude}&lat=${latitude}`);
+        })
+        .catch((err) => {
+          alert(`Unable to Find the City ${cityName}. Please try again.`);
+          console.log(err);
+        });
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   return (
     <div className="flex flex-col items-center w-full mx-auto">
@@ -44,7 +69,7 @@ const HomeScreen = () => {
           onChange={(e) => setCityName(e.target.value)}
         />
       </div>
-      <div>
+      <div onClick={HandleDisplayWeatherBtn}>
         <Button>Display Weather</Button>
       </div>
     </div>
