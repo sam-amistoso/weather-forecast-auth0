@@ -1,6 +1,6 @@
 # Weather Forecast built with ReactJS
 
-Code Challege building a Web Application using ReactJS, User Authentication, and 3rd-party API.
+Code Challenge building a Web Application using ReactJS, User Authentication, and 3rd-party API.
 
 ## Table of contents
 
