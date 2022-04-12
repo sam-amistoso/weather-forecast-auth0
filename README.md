@@ -35,6 +35,6 @@ Code Challenge building a Web Application using ReactJS, User Authentication, an
 - [Next.js](https://nextjs.org/)
 - [React](https://reactjs.org/)
 - [Open Weather Map API](https://openweathermap.org/) - 3rd-party API service
-- [Auth0](https://next-auth.js.org/) - For authentication
+- [Auth0](https://auth0.com/) - For authentication
 - [Tailwindcss](https://tailwindcss.com/) - For styles
 - Mobile-first workflow.

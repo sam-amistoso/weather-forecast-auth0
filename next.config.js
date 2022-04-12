@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  env: {},
+  images: {
+    domains: ['s.gravatar.com'],
+  },
+  env: {
+    WEATHER_API: process.env.WEATHER_API,
+  },
 };
 
 module.exports = nextConfig;
